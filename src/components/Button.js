@@ -8,14 +8,15 @@ export const Button = props => {
         <button id={props.id} onClick={() => {
             !clicked
                 ?
-                    document.getElementById(props.id).style.backgroundColor = "#000"
+                document.getElementById(props.id).style.backgroundColor = props.color
                 :
-                    document.getElementById(props.id).style.backgroundColor = "#fff"
+                document.getElementById(props.id).style.backgroundColor = "#fff"
             setClicked(!clicked)
         }}></button>
     )
 }
 
 Button.propTypes = {
-    id: PropTypes.string
+    id: PropTypes.string,
+    color: PropTypes.string
 }

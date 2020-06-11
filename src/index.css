@@ -1,49 +1,58 @@
 .main-div {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .grid {
-  padding: 15px;
-  border: 3px solid #ff0ff3;
-  border-radius: 5px;
+    padding: 15px;
+    border: 3px solid #ff0ff3;
+    border-radius: 5px;
 
-  margin-top: 80px;
-  width: 400px;
+    margin-top: 80px;
+    width: 400px;
 }
 
 .color-choose {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .row button {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000000;
-  background: none;
-  padding: 0;
-  display: inline;
-  margin: -4px 0 0 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    background: none;
+    padding: 0;
+    display: inline;
+    margin: -4px 0 0 0;
 }
 
-h3  {
-  text-align: center;
+h3 {
+    text-align: center;
 }
 
 .writeColorLabel p {
-  color: #aaaaaa;
+    color: #aaaaaa;
 }
 
 .writeColorLabel input {
-  width: 250px;
+    width: 250px;
 }
 
 .colorProbe {
-  width: 100px;
-  height: 100px;
-  box-shadow: 5px 5px 5px 0 #aaaaaa;
-  background: #fff;
-  margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px 5px 0 #aaaaaa;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.colorIn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colorIn button {
+    height: 50px;
 }

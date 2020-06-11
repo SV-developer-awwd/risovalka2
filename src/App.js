@@ -1,37 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ButtonRow} from "./components/ButtonRow";
 import {ColorChoose} from "./components/ColorChoose";
-import ColorContext from "./context/ColorContext";
 
 function App() {
+    const [color, setColor] = useState("")
+
+    const updateData = value => {
+        setColor(value)
+    }
+
     return (
-        <ColorContext.Provider value={"#ffffff"}>
-            <div className="main-div">
-                <div className="grid">
-                    <ButtonRow rowNumber={1}/>
-                    <ButtonRow rowNumber={2}/>
-                    <ButtonRow rowNumber={3}/>
-                    <ButtonRow rowNumber={4}/>
-                    <ButtonRow rowNumber={5}/>
-                    <ButtonRow rowNumber={6}/>
-                    <ButtonRow rowNumber={7}/>
-                    <ButtonRow rowNumber={8}/>
-                    <ButtonRow rowNumber={9}/>
-                    <ButtonRow rowNumber={10}/>
-                    <ButtonRow rowNumber={11}/>
-                    <ButtonRow rowNumber={12}/>
-                    <ButtonRow rowNumber={13}/>
-                    <ButtonRow rowNumber={14}/>
-                    <ButtonRow rowNumber={15}/>
-                    <ButtonRow rowNumber={16}/>
-                    <ButtonRow rowNumber={17}/>
-                    <ButtonRow rowNumber={18}/>
-                    <ButtonRow rowNumber={19}/>
-                    <ButtonRow rowNumber={20}/>
-                </div>
-                <ColorChoose/>
+        <div className="main-div">
+            <div className="grid">
+                <ButtonRow rowNumber={1} color={color}/>
+                <ButtonRow rowNumber={2} color={color}/>
+                <ButtonRow rowNumber={3} color={color}/>
+                <ButtonRow rowNumber={4} color={color}/>
+                <ButtonRow rowNumber={5} color={color}/>
+                <ButtonRow rowNumber={6} color={color}/>
+                <ButtonRow rowNumber={7} color={color}/>
+                <ButtonRow rowNumber={8} color={color}/>
+                <ButtonRow rowNumber={9} color={color}/>
+                <ButtonRow rowNumber={10} color={color}/>
+                <ButtonRow rowNumber={11} color={color}/>
+                <ButtonRow rowNumber={12} color={color}/>
+                <ButtonRow rowNumber={13} color={color}/>
+                <ButtonRow rowNumber={14} color={color}/>
+                <ButtonRow rowNumber={15} color={color}/>
+                <ButtonRow rowNumber={16} color={color}/>
+                <ButtonRow rowNumber={17} color={color}/>
+                <ButtonRow rowNumber={18} color={color}/>
+                <ButtonRow rowNumber={19} color={color}/>
+                <ButtonRow rowNumber={20} color={color}/>
             </div>
-        </ColorContext.Provider>
+            <ColorChoose updateData={updateData}/>
+        </div>
     );
 }
 
